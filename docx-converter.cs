@@ -29,9 +29,8 @@ namespace DocConverter
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
              
             // Invoke Word, open doc by path, do doc.SaveAs to generate HTML
-            Microsoft.Office.Interop.Word.Application application = new
-                Microsoft.Office.Interop.Word.Application();
- 
+            Microsoft.Office.Interop.Word.Application application = new Microsoft.Office.Interop.Word.Application();
+            
             Document doc = application.Documents.Open(files[0]);
             string result = Path.GetTempPath();
             //More "complete" but worse HTML
