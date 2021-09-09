@@ -13,3 +13,11 @@ Prerequisites:
 2. I had the very useful Html Agility Pack version 1.4.6 library referenced as well. I was using .NET 4.0 and the 4.0 version of the library. Html Agility Pack now [lives on Github](https://github.com/zzzprojects/html-agility-pack) so you can grab it easily and reference it from your project. 
 
 Later I realized a better way to do this might be to invoke the LibreOffice converter on the command line, convert your document to HTML or text, filter it with Python's BeautifulSoup library or sed or Ruby's Nokogiri, and then insert the results straight into the database of your web system. But maybe not: in text, tags like <<span>table</span>> and <<span>ul</span>> would be lost, and LibreOffice's HTML is still pretty ugly.
+
+License
+---------------
+GNU General Public License v3.0
+
+Author
+---------------
+Geoff Stratton
